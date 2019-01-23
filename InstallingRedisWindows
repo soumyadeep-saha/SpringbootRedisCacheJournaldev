@@ -1,0 +1,79 @@
+InstallingRedisWindows
+
+Step by Step
+
+GoTo
+https://redis.io/
+Click on "Check the downloads page." link
+Go To
+https://github.com/MicrosoftArchive/redis
+Click on
+You can download the latest unsigned binaries and the unsigned MSI installer from the "release page".
+It will Navigate to
+https://github.com/MicrosoftArchive/redis/releases
+
+We can install either through zip or installer
+1. Through zip
+Download
+Redis-x64-3.2.100.zip
+Unzip it in any location
+Click on redis-server (it will start redis server on our system)
+Click on redis-cli (here we interact with redis server with our commands)
+
+Now in redis-cli
+type- "ping"
+get response- "PONG"
+type- ping "hello world"
+get response- "hello world"
+type- "set keyname keyvaluesoumyadeep"
+get response- "keyvaluesoumyadeep"
+
+Add the path "D:\Redis-x64" in environment variables
+Goto command prompt and type "redis-cli" to start interacting with redis server
+
+2. Through installer
+Double click on "Redis-x64-3.2.100.msi"
+Follow the steps, select the installation location, give the default port, change the dafault memory size and click on finish.
+
+Shutdown redis
+In the cli window type
+shutdown - shutdown without save
+shutdown save - to save the keys
+shutdown nosave - not to save the keys
+or type
+exit
+or to shutdown
+Go to the window of redis-server
+cntrl+c
+
+
+
+
+
+
+
+Step 1
+Download redis from
+https://github.com/MicrosoftArchive/redis/releases
+
+Step 2
+Unzip the folder
+(if you have download the zip file)
+Run the installer
+(if you have download the msi file)
+
+
+Step 3
+Start redis-server
+and 
+Validate redis is working
+
+
+Step 4
+How to stop redis-server
+command : SHUTDOWN SAVE
+to force quit : CTRL + C
+
+Helpful Tips
+Set the redis location in Environment variable - Path
+After this you will be able to run redis commands from windows command line also
